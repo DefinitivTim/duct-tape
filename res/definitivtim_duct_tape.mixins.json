@@ -1,0 +1,18 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "de.definitivtim.ducttape.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MultiStateCopycatBlockEntityMixin",
+    "CopycatCogWheelBlockEntityMixin"
+  ],
+  "client": [
+    "SkyHandlerMixin",
+    "CopycatClientReadMixin",
+    "CopycatModelDiagMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

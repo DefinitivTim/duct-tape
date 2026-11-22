@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "definitivtim_duct_tape"
+version = "1.3.6"
+displayName = "DefinitivTim's Duct Tape"
+logoFile = "definitivtim_duct_tape.png"
+description = '''Small workarounds for third party mods. Stops a crash in Create: Copycats+ when the material of a copycat block is missing while a chunk is meshed, asks Copycats+ for one extra redraw after block data arrived on the client (copycat blocks that stay invisible until a block update), and stops Create: Cosmonautics from processing its sky every frame while the custom sky option is off.'''
+authors = "DefinitivTim"
+
+[[mixins]]
+config = "definitivtim_duct_tape.mixins.json"
+
+[[dependencies.definitivtim_duct_tape]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.definitivtim_duct_tape]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.definitivtim_duct_tape]]
+modId = "copycats"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.definitivtim_duct_tape]]
+modId = "rocketnautics"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "CLIENT"
